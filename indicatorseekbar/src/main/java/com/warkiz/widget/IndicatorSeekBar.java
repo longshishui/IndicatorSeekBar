@@ -1334,18 +1334,15 @@ public class IndicatorSeekBar extends View {
         if (mShowIndicatorType == IndicatorType.NONE) {
             return;
         }
-        if (mIndicator == null) {
-            mIndicator = new Indicator(mContext,
-                    this,
-                    mIndicatorColor,
-                    mShowIndicatorType,
-                    mIndicatorTextSize,
-                    mIndicatorTextColor,
-                    mIndicatorContentView,
-                    mIndicatorTopContentView);
-            this.mIndicatorContentView = mIndicator.getInsideContentView();
-        }
-
+        mIndicator = new Indicator(mContext,
+                this,
+                mIndicatorColor,
+                mShowIndicatorType,
+                mIndicatorTextSize,
+                mIndicatorTextColor,
+                mIndicatorContentView,
+                mIndicatorTopContentView);
+        this.mIndicatorContentView = mIndicator.getInsideContentView();
     }
 
     private void updateStayIndicator() {
@@ -1786,6 +1783,51 @@ public class IndicatorSeekBar extends View {
             this.mCustomDrawableMaxHeight = Math.max(mThumbTouchRadius, mTickRadius) * 2.0f;
             initTickMarksBitmap();
         }
+        invalidate();
+    }
+
+    /**
+     * set the seekbar's indicator's color.
+     * by longshishui
+     *
+     * @param color colorInt
+     */
+    public void setIndicatorColor(@ColorInt int color) {
+        this.mIndicatorColor = color;
+        invalidate();
+    }
+
+    /**
+     * set the seekbar's indicator's color.
+     * by longshishui
+     *
+     * @param color colorInt
+     */
+    public void setIndicatorTextColor(@ColorInt int color) {
+        this.mIndicatorTextColor = color;
+        initIndicatorContentView();
+    }
+
+    /**
+     * set the seekbar's indicator's color.
+     * by longshishui
+     *
+     * @param color colorInt
+     */
+    public void setBackgroundTrackColor(@ColorInt int color) {
+        this.mBackgroundTrackColor = color;
+        invalidate();
+    }
+
+
+    /**
+     * set the seekbar's progress's color.
+     * by longshishui
+     *
+     * @param color colorInt
+     */
+    public void setProgressColor(@ColorInt int color) {
+        this.mProgressTrackColor = color;
         invalidate();
     }
 
