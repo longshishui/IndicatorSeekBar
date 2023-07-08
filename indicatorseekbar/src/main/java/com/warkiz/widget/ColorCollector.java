@@ -1,7 +1,15 @@
+/**
+ * Copyright: (C) 2017 zhuangguangquan
+ * License: Apache License, Version 2.0
+ * <p>
+ * Modified: longshishui
+ * 2023/07/08
+ */
+
 package com.warkiz.widget;
 
 
-import android.support.annotation.ColorInt;
+import androidx.annotation.ColorInt;
 
 /**
  * for collecting each section track color

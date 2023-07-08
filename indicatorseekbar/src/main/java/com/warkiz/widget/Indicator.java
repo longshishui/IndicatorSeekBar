@@ -1,16 +1,25 @@
+/**
+ * Copyright: (C) 2017 zhuangguangquan
+ * License: Apache License, Version 2.0
+ * <p>
+ * Modified: longshishui
+ * 2023/07/08
+ */
+
 package com.warkiz.widget;
 
 import android.content.Context;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * created by zhuangguangquan on 2017/9/9
@@ -27,21 +36,21 @@ import android.widget.TextView;
  */
 public class Indicator {
     private final int mWindowWidth;
-    private int[] mLocation = new int[2];
+    private final int[] mLocation = new int[2];
     private ArrowView mArrowView;
     private TextView mProgressTextView;
     private PopupWindow mIndicatorPopW;
     private LinearLayout mTopContentView;
-    private int mGap;
-    private int mIndicatorColor;
-    private Context mContext;
+    private final int mGap;
+    private final int mIndicatorColor;
+    private final Context mContext;
     private int mIndicatorType;
-    private IndicatorSeekBar mSeekBar;
+    private final IndicatorSeekBar mSeekBar;
     private View mIndicatorView;
     private View mIndicatorCustomView;
-    private View mIndicatorCustomTopContentView;
-    private float mIndicatorTextSize;
-    private int mIndicatorTextColor;
+    private final View mIndicatorCustomTopContentView;
+    private final float mIndicatorTextSize;
+    private final int mIndicatorTextColor;
 
     public Indicator(Context context,
                      IndicatorSeekBar seekBar,

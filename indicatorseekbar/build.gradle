@@ -27,12 +27,12 @@ ext {
 }
 
 android {
-    compileSdkVersion 27
+    compileSdk 32
     buildToolsVersion '27.0.3'
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 27
+        minSdk 24
+        targetSdk 32
         versionCode 3
         versionName VERSION_NAME
     }
@@ -45,7 +45,8 @@ android {
 }
 
 dependencies {
-    compileOnly 'com.android.support:appcompat-v7:27.1.1'
+    compileOnly 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.databinding:databinding-common:7.2.2'
 }
 
 

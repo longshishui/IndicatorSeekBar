@@ -1,3 +1,11 @@
+/**
+ * Copyright: (C) 2017 zhuangguangquan
+ * License: Apache License, Version 2.0
+ * <p>
+ * Modified: longshishui
+ * 2023/07/08
+ */
+
 package com.warkiz.widget;
 
 import android.content.Context;
@@ -6,12 +14,12 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
-import android.support.annotation.ArrayRes;
-import android.support.annotation.ColorInt;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.NonNull;
 import android.view.View;
+
+import androidx.annotation.ArrayRes;
+import androidx.annotation.ColorInt;
+import androidx.annotation.LayoutRes;
+import androidx.annotation.NonNull;
 
 /**
  * created by zhuangguangquan on 2018/6/3

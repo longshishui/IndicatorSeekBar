@@ -1,3 +1,11 @@
+/**
+ * Copyright: (C) 2017 zhuangguangquan
+ * License: Apache License, Version 2.0
+ * <p>
+ * Modified: longshishui
+ * 2023/07/08
+ */
+
 package com.warkiz.widget;
 
 
@@ -7,9 +15,10 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Rect;
 import android.graphics.RectF;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 /**
  * created by zhuangguangquan on 2017/12/13.
